@@ -158,26 +158,7 @@ export default function ContactSection() {
                 </form>
               </Form>
             )}
-            
-            <div className="mt-8 text-center">
-              <p className="text-gray-600 mb-4">Or reach out directly:</p>
-              <div className="flex justify-center space-x-6">
-                <a 
-                  href="mailto:hello@devpops.com" 
-                  className="flex items-center text-primary hover:text-accent transition-colors"
-                >
-                  <Mail className="w-5 h-5 mr-2" />
-                  hello@devpops.com
-                </a>
-                <a 
-                  href="tel:+40123456789" 
-                  className="flex items-center text-primary hover:text-accent transition-colors"
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  +40 123 456 789
-                </a>
-              </div>
-            </div>
+
           </CardContent>
         </Card>
       </div>
