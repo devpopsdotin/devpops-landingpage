@@ -1,0 +1,47 @@
+Build a new, single-page website from scratch for a solo web developer and DevOps expert. The brand name is "DevPops". The website must be in English.
+The primary goal of this website is to attract and convert non-technical small business owners by building trust and clearly communicating the value of an affordable, all-in-one website service.
+The overall design aesthetic must be:
+ * Modern, clean, and professional.
+ * Trustworthy and approachable.
+ * Utilize a clean layout with plenty of white space.
+ * Color Palette: Use a primary color scheme of deep blue and white for a professional feel, with a single vibrant accent color (like a bright orange or teal) for all buttons and calls-to-action (CTAs).
+The website should be a single scrolling page with the following sections in this specific order:
+1. Hero Section:
+ * Headline: Use the exact text: "Your Professional Business Website, Live in 3 Days."
+ * Tagline/Subheading: Use the exact text: "I provide a complete, stress-free service: from concept and design to hosting and ongoing support. I handle all the tech, so you can focus on your business."
+ * Call-to-Action Button: A prominent button with the text "Get Your Free Quote".
+2. About Me Section:
+ * Crucial Instruction: This section must build personal trust. Do not use "we" or "our". Use "I" and "my" exclusively.
+ * Layout: On one side, include a circular placeholder for a professional, friendly headshot of a person.
+ * Content: Next to the photo, use this text: "Hello! I'm the founder of DevPops. As a professional DevOps expert with a passion for building, I created this service for small businesses who need a powerful online presence without the high costs and complexity. My mission is to be your trusted technical partner, delivering a high-quality website quickly and providing the support you need to succeed."
+3. Services Section:
+ * Title: "Your All-in-One Website Solution"
+ * Layout: Present the following three service packages in clean, side-by-side columns or cards. Each package needs a title, price, and a short feature list.
+   * Package 1 Title: Digital Launchpad
+   * Package 1 Price: €150
+   * Package 1 Features: A professional single-page site, Perfect for getting online fast, Contact info & social links, Mobile-friendly design.
+   * Package 2 Title: Business Showcase
+   * Package 2 Price: €350
+   * Package 2 Features: A complete 3-5 page website, Photo gallery & services page, Contact form to capture leads, Basic SEO setup.
+   * Package 3 Title: Support & Maintenance Plan
+   * Package 3 Price: €30/month
+   * Package 3 Features: Secure & fast hosting, Domain management, Software updates, Personal ongoing support.
+4. My Work Section (Portfolio):
+ * Title: "Quality You Can See"
+ * Layout: This is the most important section for building trust. Create a grid featuring exactly three project placeholders.
+ * Content for Each Project: For each of the three placeholders, you must include:
+   * A high-quality, relevant stock image (e.g., a picture of a coffee shop interior, a professional camera, a clean van for a tradesperson).
+   * A project title (e.g., "Brasov Brews - Cafe Website", "Creative Lens - Photography Portfolio", "Cluj Plumbing - Service Site").
+   * A short description (e.g., "A stylish and modern site designed to showcase their menu and location.", "A visually-focused portfolio to attract new clients.", "A clean, trustworthy website focused on generating customer leads via a prominent contact form.").
+5. How It Works Section:
+ * Title: "Your Path to a Professional Website"
+ * Layout: A simple, 3-step visual process. Use clean icons for each step.
+   * Step 1: Discovery Call - We'll have a quick chat to understand your vision and goals.
+   * Step 2: Build & Review - I'll build your website and we'll review it together to make sure it's perfect.
+   * Step 3: Launch & Support - I'll handle the entire launch process and provide ongoing support.
+6. Contact Section (Final CTA):
+ * Title: "Ready to Grow Your Business?"
+ * Subheading: "Let's build your new website. Fill out the form below or send me an email, and I'll get back to you within 24 hours."
+ * Form: A simple contact form with fields for "Name", "Email", and "Tell me about your project".
+ * Button: A final, prominent call-to-action button with the text "Send My Request".
+The final generated website should feel cohesive, professional, and perfectly tailored to make a small business owner feel confident and excited to start a project.
