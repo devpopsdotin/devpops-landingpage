@@ -10,7 +10,7 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="pt-16 bg-gradient-to-br from-primary to-blue-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 800 }}>
             Your Professional Business Website, Live in 3 Days.
