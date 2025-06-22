@@ -11,7 +11,7 @@ export default function AboutSection() {
             />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 700 }}>
               Building Trust Through Quality
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
