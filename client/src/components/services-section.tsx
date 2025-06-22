@@ -51,7 +51,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 700 }}>
             Your All-in-One Website Solution
           </h2>
@@ -78,11 +78,11 @@ export default function ServicesSection() {
                 </div>
               )}
               
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-primary mb-4">
+              <CardHeader className="text-center p-8">
+                <CardTitle className="text-2xl font-bold text-primary mb-6">
                   {pkg.title}
                 </CardTitle>
-                <div className="mb-6">
+                <div className="mb-8">
                   <span className="text-4xl font-bold text-accent">{pkg.price}</span>
                   {pkg.priceUnit && (
                     <span className="text-gray-600">{pkg.priceUnit}</span>
@@ -90,8 +90,8 @@ export default function ServicesSection() {
                 </div>
               </CardHeader>
               
-              <CardContent>
-                <ul className="space-y-3 mb-8">
+              <CardContent className="p-8 pt-0">
+                <ul className="space-y-4 mb-10">
                   {pkg.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />

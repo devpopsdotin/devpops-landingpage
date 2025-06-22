@@ -22,7 +22,7 @@ export default function ProcessSection() {
   return (
     <section id="process" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 700 }}>
             Your Path to a Professional Website
           </h2>
@@ -35,11 +35,11 @@ export default function ProcessSection() {
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (
-              <div key={index} className="text-center">
-                <div className="bg-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <IconComponent className="w-8 h-8 text-white" />
+              <div key={index} className="text-center px-4">
+                <div className="bg-primary w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+                  <IconComponent className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-4">
+                <h3 className="text-xl font-bold text-primary mb-6">
                   {step.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
