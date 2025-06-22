@@ -14,7 +14,7 @@ export default function AboutSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 700 }}>
               Building Trust Through Quality
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '18px', lineHeight: '1.6' }}>
               Hello! I'm the founder of DevPops. As a professional DevOps expert with a passion for building, I created this service for small businesses who need a powerful online presence without the high costs and complexity. My mission is to be your trusted technical partner, delivering a high-quality website quickly and providing the support you need to succeed.
             </p>
           </div>
