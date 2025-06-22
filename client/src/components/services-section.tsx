@@ -102,7 +102,7 @@ export default function ServicesSection() {
                 
                 <Button 
                   onClick={scrollToContact}
-                  className="w-full bg-accent hover:bg-accent/90 text-white font-semibold transition-all duration-300"
+                  className="w-full btn-primary text-white font-semibold px-8 py-3"
                 >
                   Get Started
                 </Button>

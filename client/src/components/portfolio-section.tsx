@@ -5,20 +5,20 @@ export default function PortfolioSection() {
     {
       title: "Brasov Brews - Cafe Website",
       description: "A stylish and modern site designed to showcase their menu and location.",
-      image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      alt: "Modern coffee shop interior with cozy seating"
+      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
+      alt: "Modern coffee shop interior with elegant lighting and seating"
     },
     {
       title: "Creative Lens - Photography Portfolio",
       description: "A visually-focused portfolio to attract new clients.",
-      image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      alt: "Professional camera equipment with artistic setup"
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
+      alt: "Professional DSLR camera with prime lens on clean surface"
     },
     {
-      title: "Cluj Plumbing - Service Site",
-      description: "A clean, trustworthy website focused on generating customer leads via a prominent contact form.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      alt: "Professional service van with clean branding"
+      title: "CodeCraft - Web Development",
+      description: "A modern developer portfolio showcasing clean code and innovative solutions.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
+      alt: "Laptop displaying clean code on modern desk setup"
     }
   ];
 
@@ -38,13 +38,16 @@ export default function PortfolioSection() {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
-              <img 
-                src={project.image}
-                alt={project.alt}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative">
+                <img 
+                  src={project.image}
+                  alt={project.alt}
+                  className="w-full h-48 object-cover shadow-sm"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent"></div>
+              </div>
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-primary mb-4">
                   {project.title}

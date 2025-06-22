@@ -130,4 +130,23 @@
   .hover\:border-devpops-orange:hover {
     border-color: var(--devpops-orange);
   }
+  
+  /* Enhanced button styles */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--devpops-orange), hsl(22, 96%, 58%));
+    border: none;
+    box-shadow: 0 10px 25px rgba(255, 115, 45, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(255, 115, 45, 0.4);
+    filter: brightness(1.1);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(255, 115, 45, 0.3);
+  }
 }

@@ -21,7 +21,7 @@ export default function HeroSection() {
           <Button 
             onClick={scrollToContact}
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="btn-primary text-white font-semibold px-12 py-4 text-lg"
           >
             Get Your Free Quote
           </Button>
