@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,7 +8,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { Mail, Phone, Calendar } from "lucide-react";
 import GoogleCalendarButton from "./google-calendar-button";
 
@@ -34,30 +32,27 @@ export default function ContactSection() {
     }
   });
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      return response.json();
-    },
-    onSuccess: (data) => {
-      setIsSubmitted(true);
-      form.reset();
-      toast({
-        title: "Message sent successfully!",
-        description: data.message,
-      });
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Error sending message",
-        description: error.message || "Something went wrong. Please try again.",
-        variant: "destructive",
-      });
-    }
-  });
-
   const onSubmit = (data: ContactFormData) => {
-    contactMutation.mutate(data);
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`New Project Inquiry from ${data.name}`);
+    const body = encodeURIComponent(`Name: ${data.name}
+Email: ${data.email}
+
+Project Description:
+${data.project}
+
+--
+This message was sent from your DevPops website contact form.`);
+    
+    const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, '_blank');
+    
+    setIsSubmitted(true);
+    form.reset();
+    toast({
+      title: "Email client opened!",
+      description: "Your default email app should open with the message pre-filled.",
+    });
   };
 
   return (
@@ -186,9 +181,8 @@ export default function ContactSection() {
                   <Button 
                     type="submit" 
                     className="w-full btn-primary text-white font-semibold py-4 px-8"
-                    disabled={contactMutation.isPending}
                   >
-                    {contactMutation.isPending ? "Sending..." : "Send My Request"}
+                    Send My Request
                   </Button>
                 </form>
               </Form>
