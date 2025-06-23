@@ -122,13 +122,13 @@ export default function PortfolioSection() {
             const getImageClass = () => {
               switch (project.style) {
                 case 'laptop':
-                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105";
+                  return "w-full h-56 object-cover transition-transform duration-300 ease-out group-hover:scale-105 will-change-transform";
                 case 'organic':
-                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-3xl";
+                  return "w-full h-56 object-cover transition-transform duration-300 ease-out group-hover:scale-105 rounded-t-3xl will-change-transform";
                 case 'friendly':
-                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-xl";
+                  return "w-full h-56 object-cover transition-transform duration-300 ease-out group-hover:scale-105 rounded-t-xl will-change-transform";
                 default:
-                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110";
+                  return "w-full h-56 object-cover transition-transform duration-300 ease-out group-hover:scale-105 will-change-transform";
               }
             };
 
@@ -137,7 +137,7 @@ export default function PortfolioSection() {
                 key={index}
                 className={getCardClass()}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden bg-gray-100">
                   {project.style === 'laptop' && (
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-50 z-0"></div>
                   )}
@@ -145,8 +145,9 @@ export default function PortfolioSection() {
                     src={project.image}
                     alt={project.alt}
                     className={getImageClass()}
+                    loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out"></div>
                   
                   {/* Live/Coming Soon Badge */}
                   <div className="absolute top-4 left-4">
