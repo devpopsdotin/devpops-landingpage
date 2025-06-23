@@ -13,6 +13,7 @@ import ceramicBowlImg from "@assets/pexels-rethaferguson-3817497_1750668805178.j
 import texturedPlateImg from "@assets/pexels-khezez-29935101_1750668908753.jpg";
 import organicVaseImg from "@assets/pexels-karolina-grabowska-4038962_1750669011736.jpg";
 import teaCeremonyImg from "@assets/pexels-ivan-samkov-8952012_1750669088780.jpg";
+import artistStudioImg from "@assets/pexels-shvetsa-5682176_1750669225193.jpg";
 
 interface Product {
   id: number;
@@ -203,7 +204,7 @@ export default function ArtisanCrafts() {
               <div className="relative">
                 <div className="absolute inset-0 bg-stone-200 rounded-lg transform rotate-3"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src={artistStudioImg}
                   alt="Elena Rodriguez in her ceramic studio"
                   className="relative w-full rounded-lg object-cover shadow-lg filter grayscale"
                   style={{ aspectRatio: '4/5' }}
