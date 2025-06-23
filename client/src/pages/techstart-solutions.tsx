@@ -142,7 +142,7 @@ export default function TechStartSolutions() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-white" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
       {/* Navigation */}
       <nav className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -179,7 +179,7 @@ export default function TechStartSolutions() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-6 px-4 py-2 bg-blue-100 text-blue-700 border-blue-200">
-              🚀 Launch Your SaaS in Record Time
+              Custom Software Development
             </Badge>
             
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-tight">
@@ -379,60 +379,55 @@ export default function TechStartSolutions() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      {/* Project Types Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 px-4 py-2 bg-green-100 text-green-700 border-green-200">
-              Simple Pricing
+            <Badge className="mb-4 px-4 py-2 bg-purple-100 text-purple-700 border-purple-200">
+              Project Types
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              Choose Your Plan
+              We Handle Projects of All Sizes
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Start free and scale as you grow. All plans include our core features with no hidden fees.
+              From MVP development to enterprise platforms, we tailor our approach to your specific needs and timeline.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pricingPlans.map((plan, index) => (
-              <Card key={index} className={`relative border-2 transition-all duration-300 hover:shadow-xl ${
-                plan.popular 
-                  ? 'border-blue-500 shadow-lg scale-105' 
-                  : 'border-slate-200 hover:border-blue-300'
-              }`}>
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <Badge className="px-4 py-2 bg-blue-600 text-white">Most Popular</Badge>
+            {projectTypes.map((project, index) => (
+              <Card key={index} className="border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="pb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <CardTitle className="text-2xl font-bold text-slate-900">{project.title}</CardTitle>
+                    <Badge variant="outline" className="text-blue-600 border-blue-200">
+                      {project.timeframe}
+                    </Badge>
                   </div>
-                )}
-                <CardHeader className="text-center pb-8">
-                  <CardTitle className="text-2xl font-bold text-slate-900">{plan.name}</CardTitle>
-                  <div className="mt-4">
-                    <span className="text-5xl font-bold text-slate-900">{plan.price}</span>
-                    <span className="text-slate-600">{plan.period}</span>
-                  </div>
-                  <CardDescription className="mt-4 text-slate-600">
-                    {plan.description}
+                  <CardDescription className="text-slate-600 leading-relaxed">
+                    {project.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-4 mb-8">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center space-x-3">
-                        <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                        <span className="text-slate-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button 
-                    className={`w-full py-3 ${
-                      plan.popular 
-                        ? 'bg-blue-600 hover:bg-blue-700 text-white' 
-                        : 'bg-slate-100 hover:bg-slate-200 text-slate-900'
-                    }`}
-                  >
-                    Get Started
+                  <div className="mb-6">
+                    <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">
+                      What's Included
+                    </p>
+                    <ul className="space-y-3">
+                      {project.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start space-x-3">
+                          <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="mb-6 p-4 bg-slate-50 rounded-lg">
+                    <p className="text-sm font-medium text-slate-700 mb-1">Ideal for:</p>
+                    <p className="text-sm text-slate-600">{project.ideal}</p>
+                  </div>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                    Discuss This Project
                   </Button>
                 </CardContent>
               </Card>
@@ -449,10 +444,10 @@ export default function TechStartSolutions() {
               Success Stories
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              Trusted by SaaS Founders
+              Trusted by Business Leaders
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Join hundreds of successful entrepreneurs who launched their SaaS businesses with TechStart Solutions.
+              Join hundreds of successful companies who built their custom software solutions with TechStart Solutions.
             </p>
           </div>
 
@@ -488,22 +483,22 @@ export default function TechStartSolutions() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-indigo-600">
+      <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 to-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Launch Your SaaS?
+            Ready to Build Your Custom Solution?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of entrepreneurs who chose TechStart Solutions to build their dream SaaS business. Start your free trial today.
+            Let's discuss your project requirements and create a custom software solution that drives your business forward.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="px-8 py-4 text-lg bg-white text-blue-600 hover:bg-blue-50">
-              Start Free Trial
+              Get Project Estimate
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white hover:bg-white/10">
               <HeadphonesIcon className="w-5 h-5 mr-2" />
-              Talk to Sales
+              Schedule Consultation
             </Button>
           </div>
           <p className="text-sm text-blue-200 mt-6">
