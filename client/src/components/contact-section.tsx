@@ -82,7 +82,7 @@ export default function ContactSection() {
               <p className="text-blue-100 text-sm mb-4">Schedule a free 15-minute chat to discuss your project</p>
               <Button 
                 className="w-full bg-accent hover:bg-accent/90 text-white font-semibold"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2FER4SZWZpbG9uZUBnbWFpbC5jb20', '_blank')}
               >
                 Schedule Free Chat
               </Button>
