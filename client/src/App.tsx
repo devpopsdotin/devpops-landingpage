@@ -12,7 +12,7 @@ import ArtisanCrafts from "@/pages/artisan-crafts";
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={ArtisanCrafts} />
+      <Route path="/" component={Home} />
       <Route path="/devpops" component={Home} />
       <Route path="/brasov-brews" component={BrasovBrews} />
       <Route path="/techstart-solutions" component={TechStartSolutions} />
