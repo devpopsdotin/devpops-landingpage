@@ -1,3 +1,5 @@
+import sergiunPepaPhoto from "@assets/Picsart_25-06-23_15-05-15-323_1750680385201.jpg";
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-16 sm:py-24 lg:py-32 bg-gray-50">
@@ -6,8 +8,8 @@ export default function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-start">
             <div className="text-center lg:text-left lg:pt-8 xl:pt-16">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                alt="Professional headshot of DevPops founder" 
+                src={sergiunPepaPhoto} 
+                alt="Professional headshot of Sergiu Popa, DevPops founder" 
                 className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full mx-auto lg:mx-0 mb-6 sm:mb-8 shadow-2xl object-cover border-4 border-white"
               />
             </div>
