@@ -44,7 +44,7 @@ ${data.project}
 --
 This message was sent from your DevPops website contact form.`);
     
-    const mailtoLink = `mailto:contact@devpops.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:contact@devpops.in?subject=${subject}&body=${body}`;
     window.open(mailtoLink, '_blank');
     
     setIsSubmitted(true);
