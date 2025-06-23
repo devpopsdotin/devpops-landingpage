@@ -49,7 +49,7 @@ export default function HeroSection() {
                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
                 size="lg"
-                className="border-white/30 text-white hover:bg-white/10 px-12 py-4 text-lg backdrop-blur-sm"
+                className="border-white/30 hover:bg-white/10 px-12 py-4 text-lg backdrop-blur-sm text-[#050000] bg-[#5ce0141a]"
               >
                 See My Work
               </Button>
