@@ -298,23 +298,23 @@ export default function BrasovBrews() {
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-orange-600/20 rounded-3xl blur-3xl"></div>
-              <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-amber-200">
+              <div className="relative bg-stone-50/90 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-stone-200">
                 <div className="grid grid-cols-2 gap-8 text-center">
                   <div>
-                    <div className="text-4xl font-bold text-amber-700 mb-3" style={{ fontFamily: 'Georgia, serif' }}>6+</div>
-                    <div className="text-sm text-amber-600 font-medium">Years of Stories</div>
+                    <div className="text-4xl font-bold text-emerald-700 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>6+</div>
+                    <div className="text-sm text-stone-600 font-medium">Years of Stories</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-bold text-amber-700 mb-3" style={{ fontFamily: 'Georgia, serif' }}>3,000+</div>
-                    <div className="text-sm text-amber-600 font-medium">Cups Shared</div>
+                    <div className="text-4xl font-bold text-emerald-700 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>3,000+</div>
+                    <div className="text-sm text-stone-600 font-medium">Cups Shared</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-bold text-amber-700 mb-3" style={{ fontFamily: 'Georgia, serif' }}>20+</div>
-                    <div className="text-sm text-amber-600 font-medium">Artisan Blends</div>
+                    <div className="text-4xl font-bold text-emerald-700 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>20+</div>
+                    <div className="text-sm text-stone-600 font-medium">Artisan Blends</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-bold text-amber-700 mb-3" style={{ fontFamily: 'Georgia, serif' }}>12</div>
-                    <div className="text-sm text-amber-600 font-medium">Traditional Treats</div>
+                    <div className="text-4xl font-bold text-emerald-700 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>12</div>
+                    <div className="text-sm text-stone-600 font-medium">Traditional Treats</div>
                   </div>
                 </div>
               </div>
@@ -327,20 +327,20 @@ export default function BrasovBrews() {
       <section id="contact" className="py-24 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-amber-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold text-stone-800 mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Find Your Way to Us
             </h2>
-            <p className="text-xl text-amber-800 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}>
+            <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-relaxed" style={{ fontStyle: 'italic' }}>
               Nestled on the narrowest street in Europe, we await your visit with warm welcomes, 
               rich aromas, and stories waiting to be shared over the perfect cup.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-12 mb-16">
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm border border-amber-200">
-              <MapPin className="w-12 h-12 text-amber-700 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-amber-900 mb-3" style={{ fontFamily: 'Georgia, serif' }}>Our Address</h3>
-              <p className="text-amber-700 leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
+            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 bg-stone-50/90 backdrop-blur-sm border border-stone-200 hover:border-emerald-300">
+              <MapPin className="w-12 h-12 text-emerald-700 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-stone-800 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Our Address</h3>
+              <p className="text-stone-700 leading-relaxed">
                 📍 Strada Sforii 12<br />
                 Historic Center<br />
                 Brașov, 500123<br />
@@ -348,10 +348,10 @@ export default function BrasovBrews() {
               </p>
             </Card>
 
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm border border-amber-200">
-              <Clock className="w-12 h-12 text-amber-700 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-amber-900 mb-3" style={{ fontFamily: 'Georgia, serif' }}>Opening Hours</h3>
-              <p className="text-amber-700 leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
+            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 bg-stone-50/90 backdrop-blur-sm border border-stone-200 hover:border-emerald-300">
+              <Clock className="w-12 h-12 text-emerald-700 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-stone-800 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Opening Hours</h3>
+              <p className="text-stone-700 leading-relaxed">
                 ⏰ Monday - Friday<br />
                 7:30am - 6:00pm<br />
                 Saturday - Sunday<br />
@@ -359,10 +359,10 @@ export default function BrasovBrews() {
               </p>
             </Card>
 
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm border border-amber-200">
-              <Phone className="w-12 h-12 text-amber-700 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-amber-900 mb-3" style={{ fontFamily: 'Georgia, serif' }}>Get in Touch</h3>
-              <p className="text-amber-700 leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
+            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 bg-stone-50/90 backdrop-blur-sm border border-stone-200 hover:border-emerald-300">
+              <Phone className="w-12 h-12 text-emerald-700 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-stone-800 mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Get in Touch</h3>
+              <p className="text-stone-700 leading-relaxed">
                 📞 0722 123 456<br />
                 ✉️ hello@brasovbrews.ro<br />
                 📱 @brasovbrews<br />
@@ -372,7 +372,7 @@ export default function BrasovBrews() {
           </div>
 
           {/* Google Map */}
-          <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-200">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-emerald-200">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.234!2d25.588!3d45.6427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b7cbbc78e87%3A0x93e3c4b45e8c9e2a!2sStrada%20Sforii%2C%20Bra%C8%99ov%2C%20Romania!5e0!3m2!1sen!2sus!4v1647889234567!5m2!1sen!2sus"
               width="100%"
@@ -388,39 +388,39 @@ export default function BrasovBrews() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-amber-950 text-amber-100 py-16 border-t-4 border-amber-700">
+      <footer className="bg-stone-950 text-stone-100 py-16 border-t-4 border-emerald-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <Coffee className="w-8 h-8 text-amber-300" />
-                <span className="text-2xl font-bold text-amber-100" style={{ fontFamily: 'Georgia, serif' }}>
+                <Coffee className="w-8 h-8 text-emerald-400" />
+                <span className="text-2xl font-bold text-stone-100" style={{ fontFamily: 'Playfair Display, serif' }}>
                   Brașov Brews
                 </span>
               </div>
-              <p className="text-amber-200 leading-relaxed" style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}>
+              <p className="text-stone-300 leading-relaxed" style={{ fontStyle: 'italic' }}>
                 Where every cup tells a story and every story creates a memory. 
                 Join us in celebrating the art of coffee and the warmth of community.
               </p>
             </div>
             
             <div>
-              <h4 className="text-xl font-bold text-amber-100 mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+              <h4 className="text-xl font-bold text-stone-100 mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Quick Links
               </h4>
               <div className="space-y-3">
-                <a href="#home" className="block text-amber-200 hover:text-amber-100 transition-colors">Home</a>
-                <a href="#menu" className="block text-amber-200 hover:text-amber-100 transition-colors">Our Menu</a>
-                <a href="#gallery" className="block text-amber-200 hover:text-amber-100 transition-colors">Gallery</a>
-                <a href="#contact" className="block text-amber-200 hover:text-amber-100 transition-colors">Visit Us</a>
+                <a href="#home" className="block text-stone-300 hover:text-emerald-300 transition-colors">Home</a>
+                <a href="#menu" className="block text-stone-300 hover:text-emerald-300 transition-colors">Our Menu</a>
+                <a href="#gallery" className="block text-stone-300 hover:text-emerald-300 transition-colors">Gallery</a>
+                <a href="#contact" className="block text-stone-300 hover:text-emerald-300 transition-colors">Visit Us</a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-xl font-bold text-amber-100 mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+              <h4 className="text-xl font-bold text-stone-100 mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Connect With Us
               </h4>
-              <div className="space-y-3 text-amber-200">
+              <div className="space-y-3 text-stone-300">
                 <p>📞 0722 123 456</p>
                 <p>✉️ hello@brasovbrews.ro</p>
                 <p>📍 Strada Sforii 12, Brașov</p>
@@ -429,11 +429,11 @@ export default function BrasovBrews() {
             </div>
           </div>
           
-          <div className="border-t border-amber-800 pt-8 text-center">
-            <p className="text-amber-300" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="border-t border-stone-800 pt-8 text-center">
+            <p className="text-stone-300" style={{ fontFamily: 'Playfair Display, serif' }}>
               © 2024 Brașov Brews. Crafted with love in the heart of Transylvania.
             </p>
-            <p className="text-amber-400 text-sm mt-2" style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}>
+            <p className="text-emerald-400 text-sm mt-2" style={{ fontStyle: 'italic' }}>
               A proud DevPops portfolio project
             </p>
           </div>
