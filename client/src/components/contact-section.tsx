@@ -61,24 +61,24 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-32 bg-gradient-to-br from-primary to-blue-800 text-white">
+    <section id="contact" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-br from-primary to-blue-800 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 700 }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Poppins, system-ui, sans-serif', fontWeight: 700 }}>
             Let's Start a Conversation
           </h2>
-          <p className="text-xl text-blue-100 leading-relaxed mb-8">
+          <p className="text-lg sm:text-xl text-blue-100 leading-relaxed mb-6 sm:mb-8">
             Ready to get your business online? Choose the option that works best for you.
           </p>
           
           {/* Two Clear Options */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto mb-8 sm:mb-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20">
               <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Quick & Easy</h3>
-              <p className="text-blue-100 text-sm mb-4">Schedule a free 15-minute chat to discuss your project</p>
+              <h3 className="text-base sm:text-lg font-bold text-white mb-2">Quick & Easy</h3>
+              <p className="text-blue-100 text-xs sm:text-sm mb-4">Schedule a free 15-minute chat to discuss your project</p>
               <GoogleCalendarButton 
                 url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1E-gy1_LEvWjhOJnLtajn5Q2lEEUjLNkZX5unNnxp6zu-ovOh9yN-HSqZofIUHx6VPanhlTtg6?gv=true"
                 color="#E4C441"
@@ -86,14 +86,14 @@ export default function ContactSection() {
               />
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Detailed Brief</h3>
-              <p className="text-blue-100 text-sm mb-4">Prefer to write? Send me your project details below</p>
+              <h3 className="text-base sm:text-lg font-bold text-white mb-2">Detailed Brief</h3>
+              <p className="text-blue-100 text-xs sm:text-sm mb-4">Prefer to write? Send me your project details below</p>
               <Button 
                 variant="outline"
                 className="w-full border-white/30 text-[#120101] hover:bg-white/10"
@@ -107,7 +107,7 @@ export default function ContactSection() {
         
 
         <Card className="shadow-2xl" id="contact-form">
-          <CardContent className="p-8">
+          <CardContent className="p-4 sm:p-6 lg:p-8">
             {isSubmitted ? (
               <div className="text-center py-8">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">

@@ -17,15 +17,15 @@ export default function HeroSection() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-accent/10 to-transparent rounded-full blur-3xl"></div>
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40 text-white">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-40 text-white">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="text-left">
             <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-8 border border-white/20">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
               Available for new projects
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
               Your business deserves 
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent to-orange-300">
                 a great website,
@@ -33,7 +33,7 @@ export default function HeroSection() {
               <span className="block">without the huge price tag.</span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-12 text-blue-100 leading-relaxed max-w-2xl" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 text-blue-100 leading-relaxed max-w-2xl" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
               I build, host, and manage professional websites for small businesses, delivering a complete solution in days, not months.
             </p>
             
@@ -41,7 +41,7 @@ export default function HeroSection() {
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="btn-primary text-white font-semibold px-12 py-4 text-lg ml-[0px] mr-[0px] pl-[120px] pr-[120px] text-center"
+                className="btn-primary text-white font-semibold px-6 sm:px-8 lg:px-12 py-4 text-base sm:text-lg text-center w-full sm:w-auto"
               >
                 Let's Start a Conversation
               </Button>
@@ -49,7 +49,7 @@ export default function HeroSection() {
                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
                 size="lg"
-                className="border-white/30 hover:bg-white/10 px-12 py-4 text-lg backdrop-blur-sm text-[#050000] bg-[#5ce0141a]"
+                className="border-white/30 hover:bg-white/10 px-6 sm:px-8 lg:px-12 py-4 text-base sm:text-lg backdrop-blur-sm text-white bg-white/10 w-full sm:w-auto"
               >
                 See My Work
               </Button>
@@ -76,9 +76,9 @@ export default function HeroSection() {
       </div>
       
       {/* Credibility Bar */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12">
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-12">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-4 sm:p-6 lg:p-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-center">
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
