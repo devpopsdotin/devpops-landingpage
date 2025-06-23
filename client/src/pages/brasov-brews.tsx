@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Phone, Mail, Coffee, Star, Heart, ShoppingCart, ArrowLeft, Camera, Users, BookOpen } from "lucide-react";
@@ -61,6 +61,10 @@ const galleryItems = [
 
 export default function BrasovBrews() {
   const [selectedCategory, setSelectedCategory] = useState("— Espresso Creations —");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100" style={{ 

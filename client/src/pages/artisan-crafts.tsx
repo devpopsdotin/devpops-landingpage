@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { 
   ArrowLeft, 
@@ -69,6 +69,10 @@ const featuredProducts: Product[] = [
 
 export default function ArtisanCrafts() {
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div 
