@@ -80,35 +80,36 @@ export default function ArtisanCrafts() {
     >
       {/* Navigation */}
       <nav className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-200">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-6">
-              <Link href="/" className="flex items-center space-x-3 text-stone-600 hover:text-stone-800 transition-colors">
-                <ArrowLeft className="w-5 h-5" />
-                <span className="text-sm font-medium">Back to DevPops</span>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16 sm:h-20">
+            <div className="flex items-center space-x-3 sm:space-x-6">
+              <Link href="/devpops" className="flex items-center space-x-2 sm:space-x-3 text-stone-600 hover:text-stone-800 transition-colors">
+                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-xs sm:text-sm font-medium hidden sm:inline">Back to DevPops</span>
               </Link>
-              <div className="w-px h-6 bg-stone-300"></div>
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center">
-                  <div className="w-6 h-6 bg-stone-100 rounded-full"></div>
+              <div className="w-px h-4 sm:h-6 bg-stone-300 hidden sm:block"></div>
+              <div className="flex items-center space-x-2 sm:space-x-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-stone-800 rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 sm:w-6 sm:h-6 bg-stone-100 rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-xl font-light text-stone-800" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <div className="text-lg sm:text-xl font-light text-stone-800" style={{ fontFamily: 'Playfair Display, serif' }}>
                     Elena Rodriguez
                   </div>
-                  <div className="text-sm text-stone-500">Ceramic Studio</div>
+                  <div className="text-xs sm:text-sm text-stone-500">Ceramic Studio</div>
                 </div>
               </div>
             </div>
-            <div className="flex items-center space-x-8">
-              <div className="hidden md:flex space-x-8">
+            <div className="flex items-center space-x-4 sm:space-x-8">
+              <div className="hidden md:flex space-x-6 lg:space-x-8">
                 <a href="#collection" className="text-stone-600 hover:text-stone-800 font-light transition-colors">Collection</a>
                 <a href="#about" className="text-stone-600 hover:text-stone-800 font-light transition-colors">About</a>
                 <a href="#contact" className="text-stone-600 hover:text-stone-800 font-light transition-colors">Contact</a>
               </div>
-              <Button variant="outline" size="sm" className="border-stone-300 text-stone-700 hover:bg-stone-100">
-                <ShoppingCart className="w-4 h-4 mr-2" />
-                Inquire
+              <Button variant="outline" size="sm" className="border-stone-300 text-stone-700 hover:bg-stone-100 text-xs sm:text-sm">
+                <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                <span className="hidden sm:inline">Inquire</span>
+                <span className="sm:hidden">Cart</span>
               </Button>
             </div>
           </div>
@@ -116,7 +117,7 @@ export default function ArtisanCrafts() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-32 lg:py-40 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-40 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -124,27 +125,27 @@ export default function ArtisanCrafts() {
           }}
         ></div>
         
-        <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-sm font-medium text-stone-600 uppercase tracking-wider mb-8">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-xs sm:text-sm font-medium text-stone-600 uppercase tracking-wider mb-6 sm:mb-8">
             Handcrafted Ceramics
           </p>
           
           <h1 
-            className="text-5xl lg:text-7xl font-light text-stone-800 mb-8 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light text-stone-800 mb-6 sm:mb-8 leading-tight"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
             From Our Hands
             <span className="block italic">to Yours</span>
           </h1>
           
-          <p className="text-xl text-stone-600 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-base sm:text-lg lg:text-xl text-stone-600 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed font-light px-4">
             Every piece is born from quiet moments at the wheel, where clay and intention meet. 
             My work celebrates the raw beauty of earth transformed—each vessel carrying the memory of gentle hands and patient fire.
           </p>
           
           <Button 
             size="lg" 
-            className="bg-stone-800 hover:bg-stone-900 text-white px-8 py-4 text-base font-light"
+            className="bg-stone-800 hover:bg-stone-900 text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-light w-full sm:w-auto"
           >
             Explore the Craft
           </Button>

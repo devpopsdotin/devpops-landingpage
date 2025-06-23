@@ -85,8 +85,8 @@ export default function Navigation() {
         </div>
         
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white border-t border-gray-100 shadow-lg animate-in slide-in-from-top-2 duration-200">
+            <div className="px-2 pt-2 pb-3 space-y-1 mobile-safe-area">
               <button 
                 onClick={() => scrollToSection("hero")}
                 className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors w-full text-left rounded-md font-medium"
