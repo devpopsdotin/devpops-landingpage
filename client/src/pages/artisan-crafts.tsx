@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import ceramicBowlImg from "@assets/pexels-rethaferguson-3817497_1750668805178.jpg";
 import texturedPlateImg from "@assets/pexels-khezez-29935101_1750668908753.jpg";
+import organicVaseImg from "@assets/pexels-karolina-grabowska-4038962_1750669011736.jpg";
 
 interface Product {
   id: number;
@@ -50,8 +51,8 @@ const featuredProducts: Product[] = [
     id: 4,
     name: "Organic Form Vase",
     price: 120,
-    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    description: "Each vase is shaped by intuition and touch, creating vessels that feel alive and connected to the earth from which they came.",
+    image: organicVaseImg,
+    description: "A sculptural meditation on form and space. This bulbous vessel breathes with organic curves, designed to cradle nature's gifts—from dried palms to wild stems—transforming any corner into a contemplative sanctuary.",
     height: "h-88"
   },
   {
@@ -163,21 +164,21 @@ export default function ArtisanCrafts() {
               
               <div className="space-y-6 text-stone-600 leading-relaxed font-light">
                 <p>
-                  I discovered my love for clay during a transformative summer in Japan, where I studied traditional 
-                  pottery techniques with master ceramicists. The meditative process of centering clay on the wheel 
-                  became a form of mindfulness that continues to guide my practice today.
+                  My journey with clay began in the quiet mountains of Japan, where ancient pottery traditions taught me 
+                  that each vessel holds the breath of its maker. The wheel became my meditation, the fire my teacher, 
+                  and silence my most trusted companion in creation.
                 </p>
                 
                 <p>
-                  My studio, nestled in the Blue Ridge Mountains, is where each piece begins its journey. I source 
-                  local clay whenever possible, honoring the earth from which my work emerges. The natural variations 
-                  in the clay body create subtle differences that make every piece unique.
+                  From my mountain studio, I work with local clay that carries the memory of these hills. Every piece 
+                  emerges from an intimate dialogue between earth and intention—curved bowls that cradle morning light, 
+                  textured plates that celebrate the ritual of sharing, vases that transform space into sanctuary.
                 </p>
                 
                 <p>
-                  Through my ceramics, I hope to bring moments of quiet beauty into daily rituals. Whether it's 
-                  the morning coffee in a hand-thrown mug or flowers arranged in a wheel-thrown vase, these objects 
-                  are meant to be lived with and cherished.
+                  My ceramics are invitations to pause. In a world of endless motion, these vessels offer quiet moments: 
+                  the weight of a mug in your hands, the shadows cast by dried stems in a sculptural vase, 
+                  the simple act of setting a beautiful table.
                 </p>
               </div>
 
