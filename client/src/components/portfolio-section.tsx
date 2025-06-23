@@ -36,42 +36,42 @@ export default function PortfolioSection() {
   ];
 
   return (
-    <section id="portfolio" className="py-32 bg-white relative overflow-hidden">
+    <section id="portfolio" className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-1/4 -left-64 w-96 h-96 bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 -right-64 w-80 h-80 bg-gradient-to-l from-accent/5 to-transparent rounded-full blur-3xl"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
+          <div className="text-center lg:text-left">
             <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
               Portfolio Showcase
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
               Quality You Can
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                 See & Feel
               </span>
             </h2>
             
-            <p className="text-xl text-gray-600 leading-relaxed mb-8">
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-6 sm:mb-8">
               Real projects for real businesses. Each website is crafted with attention to detail, modern design principles, and your success as the top priority.
             </p>
             
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center justify-center lg:justify-start space-x-4 sm:space-x-6 lg:space-x-8">
               <div className="text-center">
-                <div className="text-3xl font-black text-accent">15+</div>
-                <div className="text-sm text-gray-500">Projects Delivered</div>
+                <div className="text-2xl sm:text-3xl font-black text-accent">15+</div>
+                <div className="text-xs sm:text-sm text-gray-500">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black text-primary">100%</div>
-                <div className="text-sm text-gray-500">Client Satisfaction</div>
+                <div className="text-2xl sm:text-3xl font-black text-primary">100%</div>
+                <div className="text-xs sm:text-sm text-gray-500">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black text-accent">3</div>
-                <div className="text-sm text-gray-500">Day Delivery</div>
+                <div className="text-2xl sm:text-3xl font-black text-accent">3</div>
+                <div className="text-xs sm:text-sm text-gray-500">Day Delivery</div>
               </div>
             </div>
           </div>

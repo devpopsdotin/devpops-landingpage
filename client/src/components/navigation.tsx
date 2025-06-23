@@ -85,35 +85,35 @@ export default function Navigation() {
         </div>
         
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100">
+          <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button 
                 onClick={() => scrollToSection("hero")}
-                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors w-full text-left"
+                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors w-full text-left rounded-md font-medium"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection("about")}
-                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors w-full text-left"
+                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors w-full text-left rounded-md font-medium"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection("services")}
-                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors w-full text-left"
+                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors w-full text-left rounded-md font-medium"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection("portfolio")}
-                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors w-full text-left"
+                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors w-full text-left rounded-md font-medium"
               >
                 Portfolio
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors w-full text-left"
+                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors w-full text-left rounded-md font-medium"
               >
                 Contact
               </button>
