@@ -25,7 +25,7 @@ export default function PortfolioSection() {
       image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       alt: "Laptop displaying clean code on modern desk setup",
       link: "/artisan-crafts",
-      isLive: false
+      isLive: true
     }
   ];
 

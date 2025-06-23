@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import BrasovBrews from "@/pages/brasov-brews";
 import TechStartSolutions from "@/pages/techstart-solutions";
+import ArtisanCrafts from "@/pages/artisan-crafts";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/brasov-brews" component={BrasovBrews} />
       <Route path="/techstart-solutions" component={TechStartSolutions} />
+      <Route path="/artisan-crafts" component={ArtisanCrafts} />
       <Route component={NotFound} />
     </Switch>
   );
