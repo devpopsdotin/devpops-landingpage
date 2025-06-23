@@ -34,11 +34,18 @@ export default function BrasovBrews() {
       <nav className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <Coffee className="w-8 h-8 text-amber-600" />
-              <span className="text-2xl font-black text-gray-900" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
-                Brașov Brews
-              </span>
+            <div className="flex items-center space-x-4">
+              <Link href="/" className="flex items-center space-x-2 text-gray-500 hover:text-amber-600 transition-colors">
+                <ArrowLeft className="w-5 h-5" />
+                <span className="text-sm font-medium">Back to DevPops</span>
+              </Link>
+              <div className="w-px h-6 bg-gray-300"></div>
+              <div className="flex items-center space-x-2">
+                <Coffee className="w-8 h-8 text-amber-600" />
+                <span className="text-2xl font-black text-gray-900" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+                  Brașov Brews
+                </span>
+              </div>
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-700 hover:text-amber-600 transition-colors">Home</a>
