@@ -24,7 +24,7 @@ const featuredProducts: Product[] = [
     id: 1,
     name: "Hand-Thrown Stoneware Mug",
     price: 48,
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     description: "Crafted from locally sourced clay and finished with a subtle oatmeal glaze. Perfect for your morning coffee ritual. Each piece is unique and may have slight variations.",
     height: "h-80"
   },
@@ -32,7 +32,7 @@ const featuredProducts: Product[] = [
     id: 2,
     name: "Minimalist Ceramic Bowl",
     price: 65,
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     description: "A study in simplicity. This wheel-thrown bowl celebrates the natural beauty of clay with clean lines and an understated form.",
     height: "h-96"
   },
@@ -40,7 +40,7 @@ const featuredProducts: Product[] = [
     id: 3,
     name: "Textured Serving Plate",
     price: 85,
-    image: "https://images.unsplash.com/photo-1610389051254-64849803c5a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     description: "Inspired by natural rock formations, this plate features subtle texture work that catches light beautifully on your dining table.",
     height: "h-72"
   },
@@ -48,7 +48,7 @@ const featuredProducts: Product[] = [
     id: 4,
     name: "Organic Form Vase",
     price: 120,
-    image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     description: "Each vase is shaped by intuition and touch, creating vessels that feel alive and connected to the earth from which they came.",
     height: "h-88"
   },
@@ -56,7 +56,7 @@ const featuredProducts: Product[] = [
     id: 5,
     name: "Tea Ceremony Set",
     price: 195,
-    image: "https://images.unsplash.com/photo-1564594985645-4427056e22e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1610389051254-64849803c5a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     description: "A complete set for mindful tea preparation. Includes teapot, two cups, and serving tray, all thrown from the same clay body.",
     height: "h-80"
   }
@@ -115,7 +115,7 @@ export default function ArtisanCrafts() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(245, 245, 240, 0.7), rgba(245, 245, 240, 0.8)), url('https://images.unsplash.com/photo-1578849278619-e73505e9610f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
+            backgroundImage: `linear-gradient(rgba(245, 245, 240, 0.7), rgba(245, 245, 240, 0.8)), url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
           }}
         ></div>
         
@@ -199,7 +199,7 @@ export default function ArtisanCrafts() {
               <div className="relative">
                 <div className="absolute inset-0 bg-stone-200 rounded-lg transform rotate-3"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Elena Rodriguez in her ceramic studio"
                   className="relative w-full rounded-lg object-cover shadow-lg filter grayscale"
                   style={{ aspectRatio: '4/5' }}
