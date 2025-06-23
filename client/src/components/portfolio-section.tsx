@@ -4,28 +4,34 @@ import { Link } from "wouter";
 export default function PortfolioSection() {
   const projects = [
     {
-      title: "Brasov Brews - Cafe Website",
-      description: "A warm, inviting website for a local Romanian cafe featuring online menu, location details, and authentic cultural storytelling.",
-      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
-      alt: "Modern coffee shop interior with elegant lighting and seating",
-      link: "/brasov-brews",
-      isLive: true
-    },
-    {
-      title: "TechStart Solutions - SaaS Platform",
-      description: "Modern B2B software platform with clean design, intuitive dashboard, and seamless user experience for startup companies.",
+      title: "TechStart Solutions",
+      subtitle: "Credibility & Professionalism for B2B",
+      description: "I designed a sharp, modern website focused on building trust and clearly communicating complex services.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       alt: "Modern office workspace with multiple monitors displaying analytics",
       link: "/techstart-solutions",
-      isLive: true
+      isLive: true,
+      style: "laptop" // Clean laptop mockup style
     },
     {
-      title: "Artisan Crafts - E-commerce Store",
-      description: "Beautiful online store showcasing handmade products with integrated payment processing and inventory management.",
+      title: "Artisan Crafts",
+      subtitle: "Elegant & Emotional Storytelling",
+      description: "This project focused on creating a beautiful, gallery-like experience where high-quality photography and brand story were the heroes.",
       image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       alt: "Laptop displaying clean code on modern desk setup",
       link: "/artisan-crafts",
-      isLive: true
+      isLive: true,
+      style: "organic" // Soft shadow, no hard border
+    },
+    {
+      title: "Brasov Brews",
+      subtitle: "Atmosphere & Brand Vibe",
+      description: "I built a cozy and atmospheric site designed to make customers feel the brand's personality before they even walked in the door.",
+      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
+      alt: "Modern coffee shop interior with elegant lighting and seating",
+      link: "/brasov-brews",
+      isLive: true,
+      style: "friendly" // Rounded corners, approachable feel
     }
   ];
 
@@ -99,16 +105,46 @@ export default function PortfolioSection() {
         
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {projects.map((project, index) => {
+            // Different styling based on project type
+            const getCardClass = () => {
+              switch (project.style) {
+                case 'laptop':
+                  return "group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-200 bg-white cursor-pointer";
+                case 'organic':
+                  return "group overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-0 bg-white cursor-pointer rounded-3xl";
+                case 'friendly':
+                  return "group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 bg-white cursor-pointer rounded-xl";
+                default:
+                  return "group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 bg-white cursor-pointer";
+              }
+            };
+
+            const getImageClass = () => {
+              switch (project.style) {
+                case 'laptop':
+                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105";
+                case 'organic':
+                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-3xl";
+                case 'friendly':
+                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-xl";
+                default:
+                  return "w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110";
+              }
+            };
+
             const ProjectCard = (
               <Card 
                 key={index}
-                className="group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 bg-white cursor-pointer"
+                className={getCardClass()}
               >
                 <div className="relative overflow-hidden">
+                  {project.style === 'laptop' && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-50 z-0"></div>
+                  )}
                   <img 
                     src={project.image}
                     alt={project.alt}
-                    className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
+                    className={getImageClass()}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
@@ -133,9 +169,12 @@ export default function PortfolioSection() {
                 </div>
                 
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-black text-gray-900 mb-3 group-hover:text-primary transition-colors" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+                  <h3 className="text-xl font-black text-gray-900 mb-2 group-hover:text-primary transition-colors" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
                     {project.title}
                   </h3>
+                  <h4 className="text-sm font-semibold text-accent mb-3 uppercase tracking-wide">
+                    {project.subtitle}
+                  </h4>
                   <p className="text-gray-600 leading-relaxed">
                     {project.description}
                   </p>
