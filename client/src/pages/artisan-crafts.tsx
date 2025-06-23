@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import ceramicBowlImg from "@assets/pexels-rethaferguson-3817497_1750668805178.jpg";
 import texturedPlateImg from "@assets/pexels-khezez-29935101_1750668908753.jpg";
 import organicVaseImg from "@assets/pexels-karolina-grabowska-4038962_1750669011736.jpg";
+import teaCeremonyImg from "@assets/pexels-ivan-samkov-8952012_1750669088780.jpg";
 
 interface Product {
   id: number;
@@ -59,8 +60,8 @@ const featuredProducts: Product[] = [
     id: 5,
     name: "Tea Ceremony Set",
     price: 195,
-    image: "https://images.unsplash.com/photo-1610389051254-64849803c5a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    description: "A complete set for mindful tea preparation. Includes teapot, two cups, and serving tray, all thrown from the same clay body.",
+    image: teaCeremonyImg,
+    description: "Inspired by Japanese tea traditions, this earth-toned collection invites ritual and reflection. Each piece—teapot, cups, and serving vessels—shares the same warm clay body, creating harmony in both form and spirit for sacred teatime moments.",
     height: "h-80"
   }
 ];
@@ -218,17 +219,17 @@ export default function ArtisanCrafts() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <p className="text-sm font-medium text-stone-600 uppercase tracking-wider mb-6">
-              Winter Collection 2024
+              Earth & Fire Collection 2024
             </p>
             <h2 
               className="text-4xl lg:text-5xl font-light text-stone-800 mb-6"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
-              Explore the Craft
+              Sacred Vessels
             </h2>
             <p className="text-xl text-stone-600 max-w-2xl mx-auto font-light">
-              Each piece in this collection celebrates the raw beauty of clay, 
-              shaped by hand and fired with intention.
+              From intimate bowls to ceremonial sets, each piece honors the ancient dialogue 
+              between earth, fire, and human touch—creating vessels for life's quiet rituals.
             </p>
           </div>
 
