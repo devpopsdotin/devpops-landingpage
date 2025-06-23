@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ceramicBowlImg from "@assets/pexels-rethaferguson-3817497_1750668805178.jpg";
+import texturedPlateImg from "@assets/pexels-khezez-29935101_1750668908753.jpg";
 
 interface Product {
   id: number;
@@ -41,8 +42,8 @@ const featuredProducts: Product[] = [
     id: 3,
     name: "Textured Serving Plate",
     price: 85,
-    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    description: "Inspired by natural rock formations, this plate features subtle texture work that catches light beautifully on your dining table.",
+    image: texturedPlateImg,
+    description: "Hand-carved radial lines create a mesmerizing pattern that radiates from the center. This functional art piece transforms every meal into a mindful experience, celebrating the marriage of form and purpose.",
     height: "h-72"
   },
   {
@@ -134,8 +135,8 @@ export default function ArtisanCrafts() {
           </h1>
           
           <p className="text-xl text-stone-600 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-            Every piece is designed and thrown by hand in my small studio in the heart of the mountains. 
-            My work is inspired by natural forms and the belief that everyday objects should be beautiful.
+            Every piece is born from quiet moments at the wheel, where clay and intention meet. 
+            My work celebrates the raw beauty of earth transformed—each vessel carrying the memory of gentle hands and patient fire.
           </p>
           
           <Button 
