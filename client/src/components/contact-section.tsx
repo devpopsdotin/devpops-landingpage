@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Calendar, ExternalLink } from "lucide-react";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -74,18 +74,26 @@ export default function ContactSection() {
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+                <Calendar className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Quick & Easy</h3>
               <p className="text-blue-100 text-sm mb-4">Schedule a free 15-minute chat to discuss your project</p>
-              <Button 
-                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold"
-                onClick={() => window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2FER4SZWZpbG9uZUBnbWFpbC5jb20', '_blank')}
-              >
-                Schedule Free Chat
-              </Button>
+              <div className="space-y-3">
+                <Button 
+                  className="w-full bg-accent hover:bg-accent/90 text-white font-semibold"
+                  onClick={() => document.getElementById('calendar-embed')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  View Available Times
+                </Button>
+                <Button 
+                  variant="outline"
+                  className="w-full border-white/30 text-white hover:bg-white/10 text-sm"
+                  onClick={() => window.open('https://calendar.google.com/calendar/u/0/appointments/schedules', '_blank')}
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Open Google Calendar
+                </Button>
+              </div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -106,6 +114,51 @@ export default function ContactSection() {
             </div>
           </div>
         </div>
+        
+        {/* Calendar Booking Section */}
+        <Card className="shadow-2xl mb-8" id="calendar-embed">
+          <CardContent className="p-8">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Book Your Free Consultation</h3>
+              <p className="text-gray-600 mb-6">Select a time that works best for you. All meetings are 15 minutes and completely free.</p>
+            </div>
+            
+            {/* Google Calendar Embed */}
+            <div className="bg-gray-50 rounded-lg p-6 min-h-[500px] flex items-center justify-center">
+              <div className="text-center space-y-4">
+                <Calendar className="w-16 h-16 text-gray-400 mx-auto" />
+                <div className="space-y-2">
+                  <h4 className="text-lg font-semibold text-gray-700">Set Up Your Google Calendar</h4>
+                  <p className="text-sm text-gray-600 max-w-md">
+                    To enable booking, you'll need to create a Google Calendar appointment schedule and replace this placeholder.
+                  </p>
+                  <div className="pt-4 space-y-2">
+                    <Button 
+                      variant="outline"
+                      onClick={() => window.open('https://calendar.google.com/calendar/u/0/appointments/schedules', '_blank')}
+                      className="mr-2"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Create Appointment Schedule
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Setup Instructions */}
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <h4 className="font-semibold text-blue-900 mb-2">Quick Setup Guide:</h4>
+              <ol className="text-sm text-blue-800 space-y-1 list-decimal list-inside">
+                <li>Click "Create Appointment Schedule" above</li>
+                <li>Set your availability (e.g., Mon-Fri, 9 AM - 5 PM)</li>
+                <li>Choose 15-minute appointment slots</li>
+                <li>Add booking form questions if needed</li>
+                <li>Copy the booking page URL and replace the placeholder</li>
+              </ol>
+            </div>
+          </CardContent>
+        </Card>
         
         <Card className="shadow-2xl" id="contact-form">
           <CardContent className="p-8">
