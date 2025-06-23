@@ -153,19 +153,19 @@ export default function ArtisanCrafts() {
       </section>
 
       {/* Meet the Maker Section */}
-      <section id="about" className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section id="about" className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <h2 
-                className="text-4xl lg:text-5xl font-light text-stone-800 mb-8"
+                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-stone-800 mb-6 sm:mb-8 text-center lg:text-left"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
                 The Story Behind
                 <span className="block italic">Each Piece</span>
               </h2>
               
-              <div className="space-y-6 text-stone-600 leading-relaxed font-light">
+              <div className="space-y-4 sm:space-y-6 text-stone-600 leading-relaxed font-light text-sm sm:text-base">
                 <p>
                   My journey with clay began in the quiet mountains of Japan, where ancient pottery traditions taught me 
                   that each vessel holds the breath of its maker. The wheel became my meditation, the fire my teacher, 
@@ -217,26 +217,26 @@ export default function ArtisanCrafts() {
       </section>
 
       {/* Collection Section */}
-      <section id="collection" className="py-24 bg-amber-25">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="text-sm font-medium text-stone-600 uppercase tracking-wider mb-6">
+      <section id="collection" className="py-16 sm:py-20 lg:py-24 bg-amber-25">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <p className="text-xs sm:text-sm font-medium text-stone-600 uppercase tracking-wider mb-4 sm:mb-6">
               Earth & Fire Collection 2024
             </p>
             <h2 
-              className="text-4xl lg:text-5xl font-light text-stone-800 mb-6"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-stone-800 mb-4 sm:mb-6"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
               Sacred Vessels
             </h2>
-            <p className="text-xl text-stone-600 max-w-2xl mx-auto font-light">
+            <p className="text-base sm:text-lg lg:text-xl text-stone-600 max-w-2xl mx-auto font-light px-4">
               From intimate bowls to ceremonial sets, each piece honors the ancient dialogue 
               between earth, fire, and human touch—creating vessels for life's quiet rituals.
             </p>
           </div>
 
           {/* Masonry Grid */}
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 sm:gap-6 lg:gap-8 space-y-4 sm:space-y-6 lg:space-y-8">
             {featuredProducts.map((product) => (
               <div 
                 key={product.id} 
@@ -251,13 +251,13 @@ export default function ArtisanCrafts() {
                     className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${product.height}`}
                   />
                   
-                  {/* Hover Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent transition-opacity duration-500 ${
+                  {/* Hover Overlay - Hidden on mobile */}
+                  <div className={`absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent transition-opacity duration-500 hidden sm:block ${
                     hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                   }`}>
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 lg:p-6 text-white">
                       <h3 
-                        className="text-xl font-light mb-2"
+                        className="text-lg lg:text-xl font-light mb-2"
                         style={{ fontFamily: 'Playfair Display, serif' }}
                       >
                         {product.name}
@@ -268,22 +268,22 @@ export default function ArtisanCrafts() {
                     </div>
                   </div>
 
-                  {/* Heart Icon */}
-                  <div className={`absolute top-4 right-4 transition-opacity duration-300 ${
+                  {/* Heart Icon - Hidden on mobile */}
+                  <div className={`absolute top-3 sm:top-4 right-3 sm:right-4 transition-opacity duration-300 hidden sm:block ${
                     hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                   }`}>
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-10 h-10 p-0 bg-white/90 border-white/50 hover:bg-white"
+                      className="w-8 h-8 sm:w-10 sm:h-10 p-0 bg-white/90 border-white/50 hover:bg-white"
                     >
-                      <Heart className="w-4 h-4 text-stone-600" />
+                      <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-stone-600" />
                     </Button>
                   </div>
                 </div>
                 
                 {/* Product Details Below Image */}
-                <div className="p-6 bg-white rounded-b-lg">
+                <div className="p-4 sm:p-6 bg-white rounded-b-lg">
                   <h3 
                     className="text-lg font-light text-stone-800 mb-2"
                     style={{ fontFamily: 'Playfair Display, serif' }}
