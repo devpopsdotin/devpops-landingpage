@@ -96,7 +96,7 @@ export default function ContactSection() {
               <p className="text-blue-100 text-sm mb-4">Prefer to write? Send me your project details below</p>
               <Button 
                 variant="outline"
-                className="w-full border-white/30 text-white hover:bg-white/10"
+                className="w-full border-white/30 text-[#120101] hover:bg-white/10"
                 onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Send Project Brief

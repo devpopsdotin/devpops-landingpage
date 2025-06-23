@@ -41,7 +41,7 @@ export default function HeroSection() {
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="btn-primary text-white font-semibold px-12 py-4 text-lg"
+                className="btn-primary text-white font-semibold px-12 py-4 text-lg ml-[0px] mr-[0px] pl-[120px] pr-[120px] text-center"
               >
                 Let's Start a Conversation
               </Button>
