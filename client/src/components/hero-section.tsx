@@ -43,7 +43,7 @@ export default function HeroSection() {
                 size="lg"
                 className="btn-primary text-white font-semibold px-12 py-4 text-lg"
               >
-                Get Your Free Quote
+                Let's Start a Conversation
               </Button>
               <Button 
                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 size="lg"
                 className="border-white/30 text-white hover:bg-white/10 px-12 py-4 text-lg backdrop-blur-sm"
               >
-                View My Work
+                See My Work
               </Button>
             </div>
           </div>
