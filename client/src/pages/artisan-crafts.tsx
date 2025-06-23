@@ -9,6 +9,7 @@ import {
   Heart
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ceramicBowlImg from "@assets/pexels-rethaferguson-3817497_1750668805178.jpg";
 
 interface Product {
   id: number;
@@ -32,8 +33,8 @@ const featuredProducts: Product[] = [
     id: 2,
     name: "Minimalist Ceramic Bowl",
     price: 65,
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    description: "A study in simplicity. This wheel-thrown bowl celebrates the natural beauty of clay with clean lines and an understated form.",
+    image: ceramicBowlImg,
+    description: "Born from intimate moments with clay, this bowl embodies quiet luxury. The soft curves and warm ivory tone create a vessel that feels like poetry in ceramic form - perfect for mindful rituals.",
     height: "h-96"
   },
   {
@@ -67,7 +68,7 @@ export default function ArtisanCrafts() {
 
   return (
     <div 
-      className="min-h-screen bg-stone-50"
+      className="min-h-screen bg-amber-50"
       style={{ 
         fontFamily: 'system-ui, -apple-system, sans-serif',
         color: '#2c2c2c'
@@ -115,7 +116,7 @@ export default function ArtisanCrafts() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(245, 245, 240, 0.7), rgba(245, 245, 240, 0.8)), url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
+            backgroundImage: `linear-gradient(rgba(251, 245, 238, 0.8), rgba(251, 245, 238, 0.9)), url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
           }}
         ></div>
         
@@ -211,7 +212,7 @@ export default function ArtisanCrafts() {
       </section>
 
       {/* Collection Section */}
-      <section id="collection" className="py-24 bg-stone-50">
+      <section id="collection" className="py-24 bg-amber-25">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <p className="text-sm font-medium text-stone-600 uppercase tracking-wider mb-6">
