@@ -147,22 +147,22 @@ export default function TechStartSolutions() {
       <nav className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-4">
-              <Link href="/" className="flex items-center space-x-2 text-slate-600 hover:text-slate-800 transition-colors">
-                <ArrowLeft className="w-5 h-5" />
-                <span className="text-sm font-medium">Back to DevPops</span>
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <Link href="/devpops" className="flex items-center space-x-1 sm:space-x-2 text-slate-600 hover:text-slate-800 transition-colors">
+                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-xs sm:text-sm font-medium hidden sm:inline">Back to DevPops</span>
               </Link>
-              <div className="w-px h-6 bg-slate-300"></div>
-              <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <Rocket className="w-5 h-5 text-white" />
+              <div className="w-px h-4 sm:h-6 bg-slate-300 hidden sm:block"></div>
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                  <Rocket className="w-3 h-3 sm:w-5 sm:h-5 text-white" />
                 </div>
-                <span className="text-2xl font-bold text-slate-800">
+                <span className="text-lg sm:text-2xl font-bold text-slate-800">
                   TechStart Solutions
                 </span>
               </div>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-6 lg:space-x-8">
               <a href="#solutions" className="text-slate-600 hover:text-slate-800 font-medium transition-colors">Solutions</a>
               <a href="#process" className="text-slate-600 hover:text-slate-800 font-medium transition-colors">Process</a>
               <a href="#testimonials" className="text-slate-600 hover:text-slate-800 font-medium transition-colors">Reviews</a>
@@ -173,30 +173,30 @@ export default function TechStartSolutions() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative py-20 lg:py-32 overflow-hidden">
+      <section id="home" className="relative py-16 sm:py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-indigo-600/5 to-purple-600/10"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="mb-6 px-4 py-2 bg-blue-100 text-blue-700 border-blue-200">
+          <div className="text-center mb-12 sm:mb-16">
+            <Badge className="mb-4 sm:mb-6 px-3 sm:px-4 py-1 sm:py-2 bg-blue-100 text-blue-700 border-blue-200 text-xs sm:text-sm">
               Custom Software Development
             </Badge>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 sm:mb-8 leading-tight">
               We Build the Custom Software
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                 That Powers Your Business
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
               We partner with startups and established businesses to design, build, and deploy robust web applications that solve real-world problems.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="px-8 py-4 text-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
+              <Button size="lg" className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 w-full sm:w-auto">
                 Get a Project Estimate
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
               </Button>
               <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-slate-300 hover:bg-slate-50">
                 <Play className="w-5 h-5 mr-2" />
